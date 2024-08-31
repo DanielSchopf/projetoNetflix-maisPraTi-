@@ -1,5 +1,5 @@
-const API_KEY = 'fa8ea556177c0c06e3a8b381241ea5ca';
-
+const API_KEY = 'chave_individual';
+'
 const requests = {
   fetchPopular: `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=pt-BR&page=1`,
   fetchAcao: `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=28`,
