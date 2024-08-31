@@ -1,4 +1,4 @@
-const API_KEY = 'chave_individual';
+const API_KEY = process.env.TMDB_KEY;
 '
 const requests = {
   fetchPopular: `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=pt-BR&page=1`,
