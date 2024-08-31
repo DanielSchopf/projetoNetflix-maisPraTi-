@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+.home {
+    background-color: #141414;
+    color: white;
+    padding-top: 60px; /* Ajusta de acordo com a altura da Navbar */
+  }
+  
+  .home-content {
+    padding: 20px;
+  }
+  
+  .movie-row {
+    margin-bottom: 30px;
+  }
+  
+  .movie-row h2 {
+    font-family: Arial;
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  
+  .movie-row-posters {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+  }
+  
+  .movie-row-poster {
+    width: 150px;
+    object-fit: cover;
+    margin-right: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .movie-row-poster:hover {
+    transform: scale(1.08);
+  }
+  

@@ -1,0 +1,228 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  .page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Login Container */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 13, 0, 0.671);
+    background-image: url('./images/background-netflix.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Camada sobre o fundo */
+  .login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.268);
+    z-index: 1;
+  }
+  
+  /* Formulário de login */
+  .login-form {
+    font-family: Arial;
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  /* Estilo de entrada */
+  .login-form input {
+    font-family: Arial;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  /* Placeholder da entrada */
+  .login-form input::placeholder {
+    color: #b3b3b3;
+  }
+  
+  /* Botões e links */
+  .login-form button {
+    font-family: Arial;
+    padding: 1rem;
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  /* Botão de código de acesso */
+  .access-code-button {
+    background-color: rgba(43, 42, 42, 0.929) !important;
+    color: #ffffff !important;
+    border-radius: 4px !important;
+    padding: 10px 15px !important;
+    font-size: 14px !important;
+    cursor: pointer !important;
+    margin-top: 10px !important;
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  
+  /* Hover para botões */
+  .login-form button:hover {
+    background-color: #6e191d;
+  }
+  
+  .access-code-button:hover {
+    background-color: rgba(29, 28, 28, 0.795) !important;
+  }
+  
+  /* Links no formulário de login */
+  .login-form a {
+    font-family: Arial;
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+  }
+  
+  .login-form a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Labels no formulário de login */
+  .login-form label {
+    font-family: Arial;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+  }
+  
+  /* Checkbox no formulário de login */
+  .login-form input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  /* Texto e layout no formulário de login */
+  .login-form h1 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  /* Divisor "OU" no formulário de login */
+  .login-form .or-divider {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+  }
+  
+  .login-form .or-divider::before,
+  .login-form .or-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #b3b3b3;
+    margin: 0 10px;
+  }
+  
+  /* Rodapé */
+  .footer {
+    background-color: #000;
+    color: #9e9e9e;
+    text-align: center;
+    padding: 8rem;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Conteúdo do rodapé */
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Parágrafo do rodapé */
+  .footer-content p {
+    font-family: Arial;
+    margin: 0;
+    font-size: 0.9rem;
+    align-self: flex-start;
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 1rem;
+  }
+  
+  /* Links do rodapé */
+  .footer-links {
+    display: flex;
+    flex-direction: column; 
+    align-self: flex-start;
+    margin-left: 5%;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links .first-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links a {
+    font-family: Arial;
+    color: #9e9e9e;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links .second-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: flex-start;
+    gap: 7rem;
+  }
+  

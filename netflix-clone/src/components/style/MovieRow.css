@@ -1,0 +1,34 @@
+.movie-row {
+  position: relative;
+}
+
+.movie-row-posters {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+}
+
+.movie-row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+.control-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.control-btn.left {
+  left: 10px;
+}
+
+.control-btn.right {
+  right: 10px;
+}

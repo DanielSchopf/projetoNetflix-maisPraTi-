@@ -1,0 +1,57 @@
+.hero {
+    position: relative;
+    height: 80vh;
+    background: url('path-to-default-image.jpg') center center / cover no-repeat;
+    transition: background 0.5s ease-in-out; 
+  }
+  
+  .hero-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+  }
+  
+  .hero-title {
+    font-family: Arial;
+    -webkit-text-stroke: 1px black; 
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-description {
+    font-family: Arial;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .hero-button-watch, .hero-button-info {
+    font-family: Arial;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #e50914;
+    cursor: pointer;
+  }
+  
+  .hero-button-watch:hover, .hero-button-info:hover  {
+    background-color: #780c11;
+  }
+
+  .hero-description {
+    font-family: Arial;
+    margin-top: 20px;
+    -webkit-text-stroke: 0.2px black; 
+    font-size: 1rem;
+    color: #fff;
+    max-width: 70%;
+    line-height: 1.4;
+  }
+  
+  
