@@ -1,10 +1,17 @@
 # Sobre o projeto
 
-Este projeto consiste na utilização de conhecimento em react para criar uma versão simplificada da netflix com a finalidade de estudar e praticar funcionalidades do react
+Este projeto consiste na utilização de conhecimento em react para criar uma versão simplificada da netflix com a finalidade de estudar e praticar funcionalidades do react.
 
-# Como iniciar o projeto
+## Tecnologias utilizadas
+- **HTML:** Para estruturar e organizar semanticamente o conteúdo.
+- **CSS:** Para estilização personalizada e layouts responsivos.
+- **JavaScript:** Para recursos dinâmicos, interativos e APIs.
+- **React:** Para construir interfaces de usuário com componentes reutilizáveis.
 
-Após clonar o repositório, basta seguir os passos a seguir:
+## Como Começar
 
-1. npm install
-2. npm run dev
+Para rodar este projeto localmente, siga estes passos:
+1. Clone o repositório: `git clone [URL do Repositório]`
+2. Navegue até a pasta do projeto e instale as dependências: `npm install`
+3. Inicie o servidor de desenvolvimento: `npm run dev`
+4. Acesse http://localhost:3000 no seu navegador.
